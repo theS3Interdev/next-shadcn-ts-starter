@@ -72,8 +72,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      body: "'Open Sans', sans-serif",
-      display: "Montserrat, sans-serif",
+      sans: "Montserrat, sans-serif",
     },
   },
   plugins: [require("@tailwindcss/typography"), require("tailwindcss-animate")],

@@ -1,5 +1,3 @@
-import { Container } from "@/components/container";
-
 const HomePage = () => {
   return (
     <article>
