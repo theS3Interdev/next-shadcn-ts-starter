@@ -1,32 +1,32 @@
-import { ReactNode } from "react";
-import type { Metadata } from "next";
+import { ReactNode } from 'react';
+import type { Metadata } from 'next';
 
-import { ToastProvider } from "@/lib/providers/toast-provider";
+import { ToastProvider } from '@/lib/providers/toast-provider';
 
-import "@/app/styles/globals.css";
+import '@/app/styles/globals.css';
 
-type LayoutProps = {
-  children: ReactNode;
+type RootLayoutProps = {
+	children: ReactNode;
 };
 
 export const metadata: Metadata = {
-  title: {
-    default: "Next.JS Starter Template App",
-    template: "%s | Superior Software Solutions",
-  },
-  description:
-    "Starter template for Next.JS projects using TypeScript and Shadcn/UI.",
+	title: {
+		default: 'Next.JS Starter Template App',
+		template: '%s | Superior Software Solutions',
+	},
+	description:
+		'Starter template for Next.JS projects using TypeScript and Shadcn/UI.',
 };
 
-const Layout = ({ children }: LayoutProps) => {
-  return (
-    <html lang="en">
-      <body className="scroll-smooth font-sans antialiased">
-        {children}
-        <ToastProvider />
-      </body>
-    </html>
-  );
+const RootLayout = ({ children }: RootLayoutProps) => {
+	return (
+		<html lang="en">
+			<body className="scroll-smooth font-sans antialiased">
+				{children}
+				<ToastProvider />
+			</body>
+		</html>
+	);
 };
 
-export default Layout;
+export default RootLayout;
