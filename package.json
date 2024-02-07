@@ -1,9 +1,9 @@
 {
 	"name": "next-shadcn-ts-starter",
-	"version": "2.2.3.24",
+	"version": "2.2.7.24",
 	"private": true,
 	"scripts": {
-		"dev": "next dev --turbo",
+		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint"
